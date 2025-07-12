@@ -1,10 +1,10 @@
 import React from 'react'
-import NavGrid from './NavGrid'
+import NavGrid from '../NavGrid'
 
 const About = () => {
   return (
-    <div className='flex flex-col items-center justify-evenly'>
-      <div className='border-2 w-3/6 p-10 rounded-lg'>
+    <div className='flex flex-col items-center gap-20 h-screen'>
+      <div className='border-2 w-1/2 p-10 rounded-lg'>
         <div className='font-ubuntu text-3xl'>
           About Me
         </div>

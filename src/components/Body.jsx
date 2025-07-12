@@ -20,7 +20,7 @@ const Body = () => {
         </div> :
         <div className='h-screen flex flex-col overflow-scorll scrollbar-hide'>
           <NavbarAlt></NavbarAlt>
-          <div className='bg-black h-full flex text-white'>
+          <div className='bg-black h-fit flex text-white'>
             <Outlet />
           </div>
         </div>
