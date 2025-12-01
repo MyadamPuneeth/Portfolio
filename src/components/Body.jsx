@@ -4,6 +4,7 @@ import { Outlet, useNavigate } from 'react-router-dom';
 import Navbar from './Navbar';
 import NavbarAlt from './NavbarAlt';
 import { useLocation } from 'react-router-dom';
+import NavGrid from './NavGrid';
 
 const Body = () => {
   const location = useLocation();
@@ -18,11 +19,12 @@ const Body = () => {
             <Outlet />
           </div>
         </div> :
-        <div className='h-screen flex flex-col overflow-scorll scrollbar-hide'>
-          <NavbarAlt></NavbarAlt>
-          <div className='bg-black h-fit flex text-white'>
+        <div className='min-h-screen flex flex-col overflow-scorll scrollbar-hide bg-black text-white'>
+          <NavbarAlt />
+          <div className= 'flex-grow'>
             <Outlet />
           </div>
+          <NavGrid/>
         </div>
       }
     </div>

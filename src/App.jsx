@@ -9,6 +9,11 @@ import About from './components/pages/About';
 import ProfileSummary from './components/pages/ProfileSummary';
 import Education from './components/pages/Education';
 import Experience from './components/pages/Experience';
+import Projects from './components/pages/Projects';
+import Certifications from './components/pages/Certifications';
+import Skills from './components/pages/Skills';
+import Achievements from './components/pages/Achievements';
+import Hobbies from './components/pages/Hobbies';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -24,6 +29,11 @@ function App() {
                 <Route path='/profileSummary' element={<ProfileSummary />}></Route>
                 <Route path='/education' element={<Education />}></Route>
                 <Route path='/experience' element={<Experience />}></Route>
+                <Route path='/projects' element={<Projects/>}></Route>
+                <Route path='/certifications' element={<Certifications/>}></Route>
+                <Route path='/skills' element={<Skills/>}></Route>
+                <Route path='/achivements' element={<Achievements/>}></Route>
+                <Route path='/hobbies' element={<Hobbies/>}></Route>
               </Route>
             </Routes>
           </BrowserRouter>
