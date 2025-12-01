@@ -1,0 +1,65 @@
+name: Deploy Static Portfolio to Pages
+
+on:
+  push:
+    branches:
+      - main # Change this to your default branch name (e.g., master)
+  workflow_dispatch: # Allows manual trigger from the Actions tab
+
+# Sets permissions for the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment
+concurrency:
+  group: 'pages'
+  cancel-in-progress: true
+
+jobs:
+  # The Build Job: Builds the site and creates the deployable artifact
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      # 1. Setup Node.js (or any other language required for your build)
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22' # Set to your required Node version
+
+      # 2. Install Dependencies and Build the Project
+      - name: Install dependencies and Build
+        run: |
+          npm install
+          npm run build
+          
+      # 3. Handle SPA Routing (Crucial for React/Vue/Angular portfolios)
+      # This copies index.html to 404.html to fix routing issues
+      - name: Copy index.html to 404.html for SPA routing
+        # Change 'dist' to your actual build directory if different (e.g., 'build')
+        run: cp dist/index.html dist/404.html 
+        # Add 'continue-on-error: true' if you want the action to proceed even if the file doesn't exist yet
+
+      # 4. Upload the built directory as a Pages Artifact
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # This is the path to your compiled, final static files
+          # Make sure this matches the folder created by 'npm run build'
+          path: './dist' 
+          
+  # The Deploy Job: Takes the artifact and deploys it to GitHub Pages
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
