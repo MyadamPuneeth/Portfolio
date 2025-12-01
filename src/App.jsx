@@ -17,10 +17,10 @@ import Hobbies from './components/pages/Hobbies';
 
 function App() {
   const [count, setCount] = useState(0)
-
+  const basename = "/Portfolio";
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename={basename}>
             <Routes>
               <Route path="/" element={<Navigate to="/home" />} />
               <Route path='/' element={<Body />}>
