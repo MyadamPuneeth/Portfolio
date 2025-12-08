@@ -5,22 +5,25 @@ const Hobbies = () => {
     <div className='flex flex-col items-center mt-5 w-full text-center h-[55vh] overflow-y-scroll scrollbar-hide'>
       <div className='flex flex-col gap-10'>
         <div className='border-2 rounded-md py-5 px-32'>
-          Python - Proficient
+          Table Tennis
         </div>
         <div className='border-2 rounded-md py-5 px-32'>
-          React.js - Intermediate
+          Chess
         </div>
         <div className='border-2 rounded-md py-5 px-32'>
-          Node.js - Intermediate
+          Cricket
         </div>
         <div className='border-2 rounded-md py-5 px-32'>
-          Azure - Intermediate
+          Volleyball
         </div>
         <div className='border-2 rounded-md py-5 px-32'>
-          SQL - Proficient
+          Basketball
         </div>
         <div className='border-2 rounded-md py-5 px-32'>
-          C# - Intermediate
+          Programing
+        </div>
+        <div className='border-2 rounded-md py-5 px-32'>
+          Graphic Design
         </div>
       </div>
     </div>
