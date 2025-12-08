@@ -8,10 +8,6 @@ const NavGrid = () => {
         <div className='flex w-full justify-center '>
           <div className='flex flex-col gap-5'>
             <div className='flex gap-5'>
-              <Link to="/profileSummary">
-                <div className='flex border-2 p-5 rounded-md w-36 h-20 items-center text-center justify-center font-ubuntu'>Profile Summary</div>
-              </Link>
-
               <Link to='/education'>
                 <div className='flex border-2 p-5 rounded-md w-36 h-20 items-center justify-center'>Education</div>
               </Link>
@@ -23,12 +19,11 @@ const NavGrid = () => {
               <Link to='/experience'>
                 <div className='flex border-2 p-5 rounded-md w-36 h-20 items-center justify-center'>Experience</div>
               </Link>
-
-            </div>
-            <div className='flex gap-5 justify-evenly'>
               <Link to='/certifications'>
                 <div className='flex border-2 p-5 rounded-md w-36 h-20 items-center justify-center'>Certifications</div>
               </Link>
+            </div>
+            <div className='flex gap-5 justify-evenly'>
               <Link to='/skills'>
                 <div className='flex border-2 p-5 rounded-md w-36 h-20 items-center justify-center'>Skills</div>
               </Link>
@@ -37,6 +32,9 @@ const NavGrid = () => {
               </Link>
               <Link to='/hobbies'>
                 <div className='flex border-2 p-5 rounded-md w-36 h-20 items-center justify-center'>Hobbies</div>
+              </Link>
+              <Link to="/contact">
+                <div className='flex border-2 p-5 rounded-md w-36 h-20 items-center text-center justify-center font-ubuntu'>Contact</div>
               </Link>
             </div>
           </div>

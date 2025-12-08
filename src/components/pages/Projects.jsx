@@ -2,13 +2,19 @@ import React from 'react'
 
 const Projects = () => {
   return (
-    <div className='flex flex-col items-center mt-5 w-full gap-20 text-center'>
+    <div className='flex flex-col items-center mt-5 h-[55vh] overflow-y-scroll scrollbar-hide w-full gap-20 text-center'>
       <div className='flex flex-col gap-10'>
         <div className='border-2 rounded-md py-5 px-32'>
-          Idaho Power - Mega scale Data migration from legacy system to cloud.
+          Geospatial Information - Mega scale Data migration from legacy system to cloud.
         </div>
         <div className='border-2 rounded-md py-5 px-32'>
-          Developer Tinder - Tinder for Developers meet and collaborate.
+          Customer Information - Mega scale Data migration from legacy system to cloud.
+        </div>
+        <div className='border-2 rounded-md py-5 px-32'>
+          SportMgmt - Full stack solution for sport academy to manage players and their performance. 
+        </div>
+        <div className='border-2 rounded-md py-5 px-32'>
+          DevTinder - Tinder for Developers meet and collaborate.
         </div>
         <div className='border-2 rounded-md py-5 px-32'>
           Acha Rentz - Full stack web dev project for car rental.

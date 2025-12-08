@@ -35,7 +35,7 @@ const NameCard = () => {
                                 Puneeth Myadam
                             </p>
                             <p to={"/home"} className='text-3xl font-ubuntu ml-1'>
-                                Developer
+                                Developer, Data Engineer, AI Enthusiast
                             </p>
                         </div>
                     </Link>

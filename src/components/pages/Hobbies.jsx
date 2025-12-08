@@ -20,7 +20,7 @@ const Hobbies = () => {
           Basketball
         </div>
         <div className='border-2 rounded-md py-5 px-32'>
-          Programing
+          Programming
         </div>
         <div className='border-2 rounded-md py-5 px-32'>
           Graphic Design

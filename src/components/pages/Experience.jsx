@@ -6,10 +6,10 @@ const Experience = () => {
     >
       <div className='flex flex-col gap-10'>
         <div className='border-2 rounded-md py-5 px-32'>
-          Full Stack Developer - Self Employed  
+          Associate Software Engineer - Cognine Technologies
         </div>
         <div className='border-2 rounded-md py-5 px-32'>
-          Associate Software Engineer - Cognine Technologies
+          Full Stack Developer - Self
         </div>
         <div className='border-2 rounded-md py-5 px-32'>
           Chairperson - Gitam Unviversity Sports Tournament

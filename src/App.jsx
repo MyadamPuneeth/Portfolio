@@ -6,7 +6,6 @@ import { BrowserRouter, Routes, Route, Navigate} from 'react-router-dom';
 import NameCard from './components/NameCard';
 import Navbar from './components/Navbar';
 import About from './components/pages/About';
-import ProfileSummary from './components/pages/ProfileSummary';
 import Education from './components/pages/Education';
 import Experience from './components/pages/Experience';
 import Projects from './components/pages/Projects';
@@ -14,6 +13,7 @@ import Certifications from './components/pages/Certifications';
 import Skills from './components/pages/Skills';
 import Achievements from './components/pages/Achievements';
 import Hobbies from './components/pages/Hobbies';
+import Contact from './components/pages/contact';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -26,7 +26,7 @@ function App() {
               <Route path='/' element={<Body />}>
                 <Route path='/home' element={<NameCard />}></Route>
                 <Route path='/about' element={<About />}></Route>
-                <Route path='/profileSummary' element={<ProfileSummary />}></Route>
+                <Route path='/contact' element={<Contact />}></Route>
                 <Route path='/education' element={<Education />}></Route>
                 <Route path='/experience' element={<Experience />}></Route>
                 <Route path='/projects' element={<Projects/>}></Route>
