@@ -13,7 +13,7 @@ import Certifications from './components/pages/Certifications';
 import Skills from './components/pages/Skills';
 import Achievements from './components/pages/Achievements';
 import Hobbies from './components/pages/Hobbies';
-import Contact from './components/pages/contact';
+import Contact from './components/pages/Contact';
 
 function App() {
   const [count, setCount] = useState(0)

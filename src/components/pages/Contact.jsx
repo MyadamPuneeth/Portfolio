@@ -35,13 +35,6 @@ const Contact = () => {
           @neethpu_
           <br />
           <br />
-          <b>Download Resume :</b>
-          <br />
-          <a href={PuneethResume} download='Puneeth_Resume.pdf' target='_blank'>
-            <u>Puneeth_Resume.pdf</u>
-          </a>
-          <br />
-          <br />
         </div>
       </div>
     </div>
