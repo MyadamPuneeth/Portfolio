@@ -4,8 +4,8 @@ import { createClient } from '@supabase/supabase-js';
 
 const supabaseUrl = import.meta.env.VITE_DBURL;
 const supabaseKey = import.meta.env.VITE_DBKEY;
-console.log(supabaseUrl);
-console.log(import.meta.env.DBURL);
+console.log("URL exists:", !!supabaseUrl);
+console.log("Key exists:", !!supabaseKey);
 export const supabase = createClient(supabaseUrl, supabaseKey);
 
 
