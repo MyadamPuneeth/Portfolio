@@ -35,7 +35,13 @@ jobs:
       - name: Install dependencies and Build
         run: |
           npm install
-          npm run build
+          
+      - name: Build
+        # This is where the secrets are injected into the build process
+        run: npm run build
+        env:
+          VITE_DBURL: ${{ secrets.VITE_DBURL }}
+          VITE_ANON_KEY: ${{ secrets.VITE_DBKEY }}
           
       # 3. Handle SPA Routing (Crucial for React/Vue/Angular portfolios)
       # This copies index.html to 404.html to fix routing issues
