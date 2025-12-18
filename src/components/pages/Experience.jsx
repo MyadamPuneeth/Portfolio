@@ -2,7 +2,7 @@ import React from 'react'
 
 const Experience = () => {
   return (
-    <div className='flex flex-col items-center mt-5 w-full gap-20 text-center h-[53vh] overflow-y-scroll scrollbar-hide'
+    <div className='flex flex-col items-center mt-5 w-full gap-20 text-center h-[44vh] overflow-y-scroll scrollbar-hide'
     >
       <div className='flex flex-col gap-10'>
         <div className='border-2 rounded-md py-5 px-32'>

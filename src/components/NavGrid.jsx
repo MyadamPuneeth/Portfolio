@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const NavGrid = () => {
   return (
     <div>
-      <footer className='footer sm:footer-horizontal bg-neutral text-neutral-content items-center p-4 mb-10 bottom-0'>
+      <footer className='footer sm:footer-horizontal bg-neutral text-neutral-content items-center p-4 md:mt-20 mb-10 bottom-0'>
         <div className='flex w-full justify-center '>
           <div className='flex flex-col gap-5'>
             <div className='flex gap-5'>

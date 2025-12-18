@@ -2,7 +2,7 @@ import React from 'react'
 
 const Projects = () => {
   return (
-    <div className='flex flex-col items-center mt-5 h-[55vh] overflow-y-scroll scrollbar-hide w-full gap-20 text-center'>
+    <div className='flex flex-col items-center mt-5 h-[44vh] overflow-y-scroll scrollbar-hide w-full gap-20 text-center'>
       <div className='flex flex-col gap-10'>
         <div className='border-2 rounded-md py-5 px-32'>
           Geospatial Information - Mega scale Data migration from legacy system to cloud.

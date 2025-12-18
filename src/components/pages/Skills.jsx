@@ -2,7 +2,7 @@ import React from 'react'
 
 const Skills = () => {
   return (
-    <div className='flex flex-col items-center mt-5 h-[55vh] overflow-y-scroll scrollbar-hide w-full text-center'>
+    <div className='flex flex-col items-center mt-5 h-[44vh] overflow-y-scroll scrollbar-hide w-full text-center'>
       <div className='flex flex-col gap-10'>
         <div className='border-2 rounded-md py-5 px-32'>
           Python - Proficient
