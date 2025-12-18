@@ -38,7 +38,7 @@ jobs:
           
       - name: Build
         # This is where the secrets are injected into the build process
-        run: npm run build
+        run: VITE_DBURL=$VITE_DBURL VITE_DBKEY=$VITE_DBKEY npm run build
         env:
           VITE_DBURL: ${{ secrets.VITE_DBURL }}
           VITE_ANON_KEY: ${{ secrets.VITE_DBKEY }}
