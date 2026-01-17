@@ -1,5 +1,5 @@
 import React from 'react'
-import Pic from "../assets/PorfilePhoto.jpg"
+import Pic from "../assets/IMG_1058.jpg"
 import noPic from "../assets/nodejs.png"
 import pyPic from "../assets/python.png"
 import rePic from "../assets/react.svg"
